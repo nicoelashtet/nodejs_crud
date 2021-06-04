@@ -11,9 +11,8 @@
     <table class="table table-striped" id="mytable">
       <thead>
         <tr>
-          {{!-- <th>Product ID</th> --}}
-          <th>製品リスト</th>
-          {{!-- <th>Product QTY</th> --}}
+         
+          <th>製品リスト</th>          
           <th>値段</th>
           <th>操作</th>
         </tr>
@@ -21,9 +20,8 @@
       <tbody>
          {{#each results}}
         <tr>
-          {{!-- <td>{{ product_id }}</td> --}}
-          <td>{{ product_name }}</td>
-          {{!-- <td>{{ product_qty }}</td> --}}
+         
+          <td>{{ product_name }}</td>         
           <td>{{ product_price }}</td>
           <td>
             <a href="javascript:void(0);" class="btn btn-sm btn-info edit" data-id="{{ product_id }}" data-product_name="{{ product_name }}" data-product_price="{{ product_price }}">変更</a>
