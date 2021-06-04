@@ -13,6 +13,7 @@
         <tr>
           {{!-- <th>Product ID</th> --}}
           <th>製品リスト</th>
+          {{!-- <th>Product QTY</th> --}}
           <th>値段</th>
           <th>操作</th>
         </tr>
@@ -22,6 +23,7 @@
         <tr>
           {{!-- <td>{{ product_id }}</td> --}}
           <td>{{ product_name }}</td>
+          {{!-- <td>{{ product_qty }}</td> --}}
           <td>{{ product_price }}</td>
           <td>
             <a href="javascript:void(0);" class="btn btn-sm btn-info edit" data-id="{{ product_id }}" data-product_name="{{ product_name }}" data-product_price="{{ product_price }}">変更</a>
@@ -102,7 +104,7 @@
  	                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
  	               </div>
  	               <div class="modal-body">
-												 <strong>Are You Sure To Delete This Data?</strong>
+												 <strong>削除しますか?</strong>
  	               </div>
  	               <div class="modal-footer">
 									 		<input type="hidden" name="product_id" class="form-control product_id2" required>
@@ -114,7 +116,8 @@
  	     </div>
  	 </form>
 
-<script src="/assets/js/jquery-3.3.1.js"></script>
+{{!-- <script src="/assets/js/jquery-3.3.1.js"></script> --}}
+<script src="/assets/js/jquery-3.6.0.js"></script>
 <script src="/assets/js/bootstrap.js"></script>
 <script>
     $(document).ready(function(){
